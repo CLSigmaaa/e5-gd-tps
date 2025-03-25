@@ -7,6 +7,9 @@ public class TPS_Animation_Controller : MonoBehaviour
 
     private Animator animator;
     private bool isWalking = false;
+    private bool isSprinting = false;
+    private bool isJumping = false;
+    private bool isCrouching = false;
     private float x = 0.0f;
     private float y = 0.0f;
 
@@ -26,6 +29,30 @@ public class TPS_Animation_Controller : MonoBehaviour
     {
         this.isWalking = isWalking;
         animator.SetBool("isWalking", isWalking);
+    }
+
+    public void SetIsCrouching(bool isCrouching)
+    {
+        this.isCrouching = isCrouching;
+        animator.SetBool("isCrouching", isCrouching);
+    }
+
+    public void SetIsSprinting(bool isSprinting)
+    {
+        this.isSprinting = isSprinting;
+        animator.SetBool("isSprinting", isSprinting);
+    }
+
+    public void SetIsJumping(bool isJumping)
+    {
+        this.isJumping = isJumping;
+        animator.SetBool("isJumping", isJumping);
+    }
+
+    // get isJumping
+    public bool GetIsJumping()
+    {
+        return isJumping;
     }
 
     public void SetX(float x)

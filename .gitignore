@@ -11,6 +11,13 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
+# ignore all .meta files in every directory
+*.meta
+#in sub directories too
+**/*.meta
+
+./Assets/*.meta
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/

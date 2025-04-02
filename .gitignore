@@ -11,9 +11,8 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
-# ignore all .meta files in every directory
-*.meta
-#in sub directories too
+# ignore absolutely every meta files in the entire project without exception
+
 **/*.meta
 
 ./Assets/*.meta
